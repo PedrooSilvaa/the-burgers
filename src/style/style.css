@@ -8,12 +8,11 @@
 }
 
 header {
-    background-color: pink;
     height: 100vh;
 }
 
 .menu {
-    background-color: aqua;
+    background-color: rgb(245, 235, 220);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +20,6 @@ header {
 }
 
 #logo {
-    background-color: blue;
     display: flex;
     width: 100px;
     justify-content: center;
@@ -32,7 +30,6 @@ header {
 }
 
 #menu-list {
-    background-color: blue;
     display: flex;
     width: 500px;
     justify-content: space-around;
@@ -51,11 +48,9 @@ header {
 
 
 main{
-    background-color: violet;
     height: fit-content;
 }
 #title-page{
-    background-color: pink;
     display: flex;
     justify-content: space-around;
     padding: 30px 0;
@@ -70,9 +65,11 @@ main{
 .meat-burg{
     border-bottom: 1px solid black;
     padding: 50px 0;
-    h2{
-        padding-left: 40px;
-    }
+}
+
+#title-meat, #title-special, #title-vegetarian, #title-dessert{
+    padding-left: 40px;
+    margin-bottom: 40px;
 }
 
 .meat-grid {
@@ -86,20 +83,20 @@ main{
     display: grid;
     place-items: center;
     width: 300px;
-    height: 200px;
+    height: 300px;
+    filter: drop-shadow(20px 20px 20px black);
+    background-color: rgb(245, 235, 220);
+    text-align: center;
 }
 
 .boxMeat img {
     max-width: 100%;
-    filter: drop-shadow(20px 20px 20px black);
+
 }
 
 .special-burg{
     border-bottom: 1px solid black;
     padding: 50px 0;
-    h2{
-        padding-left: 40px;
-    }
 }
 
 .special-grid {
@@ -113,8 +110,10 @@ main{
     display: grid;
     place-items: center;
     width: 300px;
-    height: 200px;
+    height: 300px;
     filter: drop-shadow(20px 20px 20px black);
+    background-color: rgb(245, 235, 220);
+    text-align: center;
 }
 
 .boxSpecial img {
@@ -124,9 +123,6 @@ main{
 .vegetarian-burg{
     border-bottom: 1px solid black;
     padding: 50px 0;
-    h2{
-        padding-left: 40px;
-    }
 }
 
 .vegetarian-grid {
@@ -140,8 +136,10 @@ main{
     display: grid;
     place-items: center;
     width: 300px;
-    height: 200px;
+    height: 300px;
     filter: drop-shadow(20px 20px 20px black);
+    background-color: rgb(245, 235, 220);
+    text-align: center;
 }
 
 .boxVegetarian img {
@@ -151,9 +149,6 @@ main{
 .dessert{
     border-bottom: 1px solid black;
     padding: 50px 0;
-    h2{
-        padding-left: 40px;
-    }
 }
 
 .dessert-grid {
@@ -161,14 +156,18 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     place-items: center;
     padding: 20px 0;
+    padding-bottom: 50px;
 }
 
 .boxDessert {
     display: grid;
     place-items: center;
     width: 300px;
-    height: 200px;
+    height: 300px;
     filter: drop-shadow(20px 20px 20px black);
+    background-color: rgb(245, 235, 220);
+    text-align: center;
+
 }
 
 .boxDessert img {
