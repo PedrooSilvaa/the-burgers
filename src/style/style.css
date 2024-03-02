@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+header {
+    background-color: pink;
+    height: 100vh;
+}
+
+.menu {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+#logo {
+    background-color: blue;
+    display: flex;
+    width: 100px;
+    justify-content: center;
+}
+
+#logo img{
+    width: 70px;
+}
+
+#menu-list {
+    background-color: blue;
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+#initial-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initial-page img{
+    height: 640px;
+}
+
+
+main{
+    background-color: violet;
+    height: fit-content;
+}
+#title-page{
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+#filter-button {
+    height: 50px;
+    width: 200px;
+}
+
+
+.meat-burg{
+    border-bottom: 1px solid black;
+    padding: 50px 0;
+    h2{
+        padding-left: 40px;
+    }
+}
+
+.meat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding: 20px 0;
+}
+
+.boxMeat {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 200px;
+}
+
+.boxMeat img {
+    max-width: 100%;
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.special-burg{
+    border-bottom: 1px solid black;
+    padding: 50px 0;
+    h2{
+        padding-left: 40px;
+    }
+}
+
+.special-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding: 20px 0;
+}
+
+.boxSpecial {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.boxSpecial img {
+    max-width: 100%;
+}
+
+.vegetarian-burg{
+    border-bottom: 1px solid black;
+    padding: 50px 0;
+    h2{
+        padding-left: 40px;
+    }
+}
+
+.vegetarian-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding: 20px 0;
+}
+
+.boxVegetarian {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.boxVegetarian img {
+    max-width: 100%;
+}
+
+.dessert{
+    border-bottom: 1px solid black;
+    padding: 50px 0;
+    h2{
+        padding-left: 40px;
+    }
+}
+
+.dessert-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    padding: 20px 0;
+}
+
+.boxDessert {
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow(20px 20px 20px black);
+}
+
+.boxDessert img {
+    max-width: 100%;
+}
