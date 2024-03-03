@@ -485,6 +485,11 @@ main{
         margin-top: 30px;
     }
 
+    .menu{
+       position: fixed;
+       width: 100%;
+    }
+
     #items-menu {
         display: none;
         position: absolute;
@@ -506,5 +511,5 @@ main{
     flex-direction: column;
    }
 
-   
+
 }
