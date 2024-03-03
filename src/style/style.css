@@ -362,7 +362,7 @@ main{
 
 .buy-grid {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 50% 20% 10%;
     place-items: center;
     border-bottom: 1px solid black;
 }
