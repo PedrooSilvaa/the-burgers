@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    </head>
    <body>
-    <div id="icon-buy">
+    <div id="icon-buy" onclick="OpenCart()">
         <i onclick="OpenCart()" class="fa-solid fa-cart-shopping"></i>
     </div>
     <div id="local-buy">
@@ -18,7 +18,7 @@
             <h1>
                 Shopping Bag
             </h1>
-            <i onclick="CloseCart()" class="fa-solid fa-xmark"></i>
+            <i onclick="CloseCart()" id="close-cart" class="fa-solid fa-xmark"></i>
         </div>
         <div id="list-buy">
             <div class="buy-grid">
@@ -220,7 +220,7 @@
                   </h1>
                </div>
                <div id="dessert-3" class="boxDessert">
-                  <h1 id="ttl-d3">Casquinha </h1>
+                  <h1 id="ttl-d3">Creme</h1>
                   <img src="src/images/png/dessert/dessert-3.png" alt="">
                   <h1 id="price-d3">
                     $15.00 

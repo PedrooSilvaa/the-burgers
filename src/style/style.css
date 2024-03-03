@@ -305,6 +305,7 @@ main{
     border-radius: 100%;
     position: fixed;
     filter: drop-shadow(2px 2px 2px black);
+    cursor: pointer;
 }
 
 #icon-buy i {
@@ -322,6 +323,10 @@ main{
     border: 5px solid black;
     height: 100vh;
     width: 500px;
+}
+
+#close-cart{
+    cursor: pointer;
 }
 
 .title-buy{
@@ -366,3 +371,8 @@ main{
     max-width: 100%;
 }
 
+#price-m1 i:hover, #price-m2 i:hover, #price-m3 i:hover, #price-m4 i:hover,#price-s1 i:hover, #price-s2 i:hover, #price-s3 i:hover, #price-s4 i:hover,
+#price-v1 i:hover, #price-v2 i:hover, #price-v3 i:hover, #price-v4 i:hover,#price-d1 i:hover, #price-d2 i:hover, #price-d3 i:hover, #price-d4 i:hover{
+    color: blue;
+    box-shadow: 2px 2px 2px black;
+}

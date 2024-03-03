@@ -90,24 +90,489 @@ function BuyMeat1(){
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
-function buyMeat2(){}
-function buyMeat3(){}
-function buyMeat4(){}
+function BuyMeat2(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
 
-function buySpecial1(){}
-function buySpecial2(){}
-function buySpecial3(){}
-function buySpecial4(){}
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
 
-function buyVegetarian1(){}
-function buyVegetarian2(){}
-function buyVegetarian3(){}
-function buyVegetarian4(){}
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
 
-function buyDessert1(){}
-function buyDessert2(){}
-function buyDessert3(){}
-function buyDessert4(){}
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/meat-sandwiches/meat-2.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Rodeio Duplo";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyMeat3(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/meat-sandwiches/meat-3.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Duplo Bacon";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyMeat4(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/meat-sandwiches/meat-4.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Whopper";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+
+function BuySpecial1(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/special-sandwiches/special-1.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Whopper Royal";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuySpecial2(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/special-sandwiches/special-2.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Bacon Lover";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuySpecial3(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/special-sandwiches/special-3.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Bacon Meat";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuySpecial4(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/special-sandwiches/special-4.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Whopper Round";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+
+function BuyVegetarian1(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/vegetarian-sandwiches/vegetarian-1.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Chicken Crispy";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyVegetarian2(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/vegetarian-sandwiches/vegetarian-2.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Chicken Duplo";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyVegetarian3(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/vegetarian-sandwiches/vegetarian-3.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Chicken Junior";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyVegetarian4(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/vegetarian-sandwiches/vegetarian-4.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "CBK";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+
+function BuyDessert1(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/dessert-sandwiches/dessert-1.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Sundae";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyDessert2(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/dessert-sandwiches/dessert-2.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Mix Nutella";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyDessert3(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/dessert-sandwiches/dessert-3.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Creme";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function BuyDessert4(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/dessert-sandwiches/dessert-4.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Sundae Guide";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
 
 function OpenCart(){
     document.getElementById("local-buy").style.display = "flex"
