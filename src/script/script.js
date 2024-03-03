@@ -1,5 +1,6 @@
-var qtd = 0;
+var qtd = 1;
 var total = 0.0;
+var valor = 0;
 
 
 function Filter(){
@@ -78,15 +79,18 @@ function BuyMeat1(){
     pai[0].appendChild(boxName);
     pai[0].appendChild(boxPrice);
 
+    
     boxImg.appendChild(img);
     img.setAttribute('src', "src/images/png/meat-sandwiches/meat-1.png");
     var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
     imagem[0].style.maxWidth = "100%";
 
+    valor = parseInt(document.getElementById("valor-m1").innerText);
+    
     document.getElementById(NboxName).innerHTML = "Cheddar Duplo";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -116,9 +120,11 @@ function BuyMeat2(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Rodeio Duplo";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
 
-    total = total + 15.00;
+    valor = parseInt(document.getElementById("valor-m2").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
+
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -148,9 +154,10 @@ function BuyMeat3(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Duplo Bacon";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-m3").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -180,9 +187,10 @@ function BuyMeat4(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Whopper";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-m4").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -213,9 +221,10 @@ function BuySpecial1(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Whopper Royal";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-s1").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -245,9 +254,10 @@ function BuySpecial2(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Bacon Lover";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-s2").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -277,9 +287,10 @@ function BuySpecial3(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Bacon Meat";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-s3").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -309,9 +320,10 @@ function BuySpecial4(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Whopper Round";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-s4").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -342,9 +354,10 @@ function BuyVegetarian1(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Chicken Crispy";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-v1").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -374,9 +387,10 @@ function BuyVegetarian2(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Chicken Duplo";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-v2").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -406,9 +420,10 @@ function BuyVegetarian3(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Chicken Junior";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-v3").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -438,9 +453,10 @@ function BuyVegetarian4(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "CBK";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-v4").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -471,9 +487,10 @@ function BuyDessert1(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Sundae";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-d1").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -503,9 +520,10 @@ function BuyDessert2(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Mix Nutella";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-d2").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -535,9 +553,10 @@ function BuyDessert3(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Creme";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-d3").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
 }
@@ -567,11 +586,16 @@ function BuyDessert4(){
     imagem[0].style.maxWidth = "100%";
 
     document.getElementById(NboxName).innerHTML = "Sundae Guide";
-    document.getElementById(NboxPrice).innerHTML = "$15.00";
+    valor = parseInt(document.getElementById("valor-d4").innerText);
+    document.getElementById(NboxPrice).innerHTML = "$"+ valor + ".00";
 
-    total = total + 15.00;
+    total = total + valor;
 
     document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+
+function RemoveList(){
+
 }
 
 function OpenCart(){
@@ -584,4 +608,16 @@ function CloseCart(){
 
 function Edit(){
     console.log("em teste");
+}
+
+function removeItem(itemId) {
+    // Remover elementos pelo ID
+    var imgElement = document.getElementById(`box-buy${itemId}`);
+    var nameElement = document.getElementById(`box-name${itemId}`);
+    var priceElement = document.getElementById(`box-price${itemId}`);
+
+    // Verificar se os elementos existem antes de tentar removê-los
+    if (imgElement) imgElement.remove();
+    if (nameElement) nameElement.remove();
+    if (priceElement) priceElement.remove();
 }

@@ -371,6 +371,11 @@ main{
     max-width: 100%;
 }
 
+
+#price-m1 i, #price-m2 i, #price-m3 i, #price-m4 i,#price-s1 i, #price-s2 i, #price-s3 i, #price-s4 i,
+#price-v1 i, #price-v2 i, #price-v3 i, #price-v4 i,#price-d1 i, #price-d2 i, #price-d3 i, #price-d4 i{
+    padding: 0;
+}
 #price-m1 i:hover, #price-m2 i:hover, #price-m3 i:hover, #price-m4 i:hover,#price-s1 i:hover, #price-s2 i:hover, #price-s3 i:hover, #price-s4 i:hover,
 #price-v1 i:hover, #price-v2 i:hover, #price-v3 i:hover, #price-v4 i:hover,#price-d1 i:hover, #price-d2 i:hover, #price-d3 i:hover, #price-d4 i:hover{
     color: blue;
