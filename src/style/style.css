@@ -36,6 +36,12 @@ header {
     font-size: 20px;
 }
 
+.li-menu a{
+    text-decoration: none;
+    color: black;
+
+}
+
 #initial-page{
     display: flex;
     justify-content: center;
