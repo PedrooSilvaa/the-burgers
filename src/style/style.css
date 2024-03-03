@@ -496,27 +496,13 @@ main{
         font-size: 15px;
     }
 
-    #items-menu {
-        display: none;
-        position: absolute;
-        top: 8%;
-        right: 0%;
-        width: 150px;
-        background-color: #5e210c;
+    #menu-list {
+      width: 200px;
    }
-    #menu-check{
-        display: block;
-        cursor: pointer;
-        width: 110px;
-    }
-    #check:checked ~ #items-menu{
-        display: block;
-   }
-   #menu-list {
-    display: flex;
-    flex-direction: column;
-   }
+   .li-menu {
+    font-size: 20px;
 
+   }
    #local-buy {
     width: 70%;
     position: absolute;

@@ -716,7 +716,6 @@ function Edit(){
 }
 
 function RemoveList(itemId) {
-    // Remover elementos pelo ID
     console.log("funfou")
     var imgElement = document.getElementById(`box-buy${itemId}`);
     var nameElement = document.getElementById(`box-name${itemId}`);
@@ -728,7 +727,6 @@ function RemoveList(itemId) {
     
         document.getElementById("saida-total").innerHTML = "$" + total + ".00";
 
-    // Verificar se os elementos existem antes de tentar removê-los
     if (imgElement) imgElement.remove();
     if (nameElement) nameElement.remove();
     if (priceElement) priceElement.remove();
