@@ -733,5 +733,4 @@ function RemoveList(itemId) {
     if (nameElement) nameElement.remove();
     if (priceElement) priceElement.remove();
     if (removedElement) removedElement.remove();
-
 }
