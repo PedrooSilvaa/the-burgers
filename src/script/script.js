@@ -1,3 +1,7 @@
+var qtd = 1;
+var total = 0.0;
+
+
 function Filter(){
     document.getElementById("list-filter").style.display = "flex";
 }
@@ -54,3 +58,61 @@ function ViewDessert(){
     document.getElementById("viewDessert").style.display = "none";
 }
 
+function BuyMeat1(){
+    qtd++;
+    var pai = document.getElementsByClassName("buy-grid");
+    var boxImg = document.createElement('div');
+    var img = document.createElement('img');
+    var boxName = document.createElement('div');    
+    var boxPrice = document.createElement('div');
+
+    var NboxImg = `box-buy${qtd}`
+    var NboxName = `box-name${qtd}`
+    var NboxPrice = `box-price${qtd}`
+
+    boxImg.setAttribute("id", NboxImg);
+    boxName.setAttribute("id", NboxName); 
+    boxPrice.setAttribute("id", NboxPrice);
+
+    pai[0].appendChild(boxImg);
+    pai[0].appendChild(boxName);
+    pai[0].appendChild(boxPrice);
+
+    boxImg.appendChild(img);
+    img.setAttribute('src', "src/images/png/meat-sandwiches/meat-1.png");
+    var imagem = document.getElementById(NboxImg).getElementsByTagName('img');
+    imagem[0].style.maxWidth = "100%";
+
+    document.getElementById(NboxName).innerHTML = "Cheddar Duplo";
+    document.getElementById(NboxPrice).innerHTML = "$15.00";
+
+    total = total + 15.00;
+
+    document.getElementById("saida-total").innerHTML = "$" +total + ".00";
+}
+function buyMeat2(){}
+function buyMeat3(){}
+function buyMeat4(){}
+
+function buySpecial1(){}
+function buySpecial2(){}
+function buySpecial3(){}
+function buySpecial4(){}
+
+function buyVegetarian1(){}
+function buyVegetarian2(){}
+function buyVegetarian3(){}
+function buyVegetarian4(){}
+
+function buyDessert1(){}
+function buyDessert2(){}
+function buyDessert3(){}
+function buyDessert4(){}
+
+function OpenCart(){
+    document.getElementById("local-buy").style.display = "flex"
+}
+
+function CloseCart(){
+    document.getElementById("local-buy").style.display = "none"
+}

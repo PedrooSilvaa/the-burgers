@@ -11,19 +11,19 @@
    </head>
    <body>
     <div id="icon-buy">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i onclick="OpenCart()" class="fa-solid fa-cart-shopping"></i>
     </div>
     <div id="local-buy">
         <div class="title-buy">
             <h1>
                 Shopping Bag
             </h1>
-            <i class="fa-solid fa-xmark"></i>
+            <i onclick="CloseCart()" class="fa-solid fa-xmark"></i>
         </div>
-        <div class="list-buy">
+        <div id="list-buy">
             <div class="buy-grid">
-                <div id="box-buy"><img src="src/images/png/meat-sandwiches/meat-1.png" alt=""></div>
-                <div id="box-buy">pedro lindo</div>
+                <div id="box-buy1"><img src="src/images/png/meat-sandwiches/meat-1.png" alt=""></div>
+                <div id="box-name1">pedro lindo</div>
                 <div id="box-buy-valor1">$15.00</div>
             </div>
         </div>
@@ -51,36 +51,8 @@
             </div>
          </nav>
          <div id="initial-page">
-            <div id="carouselExampleIndicators" class="carousel slide">
-               <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="active" aria-current="true"></button>
-               </div>
-               <div class="carousel-inner">
-                  <div class="carousel-item">
-                     <img src="src/images/jpg/acompanhamentos-banner-cardapio-d.jpg" alt="" width="1000" height="600"> 
-                  </div>
-                  <div class="carousel-item">
-                     <img src="src/images/jpg/frango-banner-cardapio-d.jpg" alt=""  width="1000" height="600"> 
-                  </div>
-                  <div class="carousel-item">
-                     <img src="src/images/jpg/carne-banner-cardapio2-d.jpg" alt=""  width="1000" height="600"> 
-                  </div>
-                  <div class="carousel-item active">
-                     <img src="src/images/jpg/sobremesa-banner-cardapio-d.jpg" alt=""  width="1000" height="600"> 
-                  </div>
-               </div>
-               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-               </button>
-            </div>
+           <img src="src/images/png/logo/logo.png" alt="">
+           <h1>THE BURGERS</h1>
          </div>
       </header>
       <main>

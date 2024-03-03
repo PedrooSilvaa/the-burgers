@@ -46,8 +46,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 92vh;
     background-color: rgb(245, 235, 220);
+    font-weight: 900;
+}
+
+#initial-page h1 {
+    font-weight: 900;
+    padding-right: 110px;
+}
+#initial-page img {
+    width: 50%;
 }
 
 main{
@@ -283,6 +293,8 @@ main{
 }
 
 #local-buy {
+    display: none;
+    flex-direction: column;
     position: absolute;
     position: fixed;
     right: 0%;
@@ -305,8 +317,9 @@ main{
     padding: 0 20px;
 }
 
-.list-buy {
+#list-buy {
     height: 85vh;
+    overflow: auto;
 }
 
 .total-buy{
@@ -329,7 +342,7 @@ main{
     border-bottom: 1px solid black;
 }
 
-#box-buy img {
+#box-buy1 img {
     max-width: 100%;
 }
 
