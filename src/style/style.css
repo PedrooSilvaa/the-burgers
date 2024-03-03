@@ -40,9 +40,12 @@ header {
     width: 500px;
     justify-content: space-around;
     font-size: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.li-menu a{
+.li-menu{
     text-decoration: none;
     color: yellow;
     font-weight: 900;
