@@ -13,6 +13,14 @@
     <div id="icon-buy">
         <i class="fa-solid fa-cart-shopping"></i>
     </div>
+    <div id="local-buy">
+    <div class="title-buy">
+        <h1>
+            Shopping Bag
+        </h1>
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    </div>
       <header>
          <nav class="menu">
             <div id="logo">
@@ -92,6 +100,7 @@
                </div>
             </div>
          </div>
+
          <div id="meat-burg">
             <h1 id="title-meat">Meat Sandwiches</h1>
             <div class="meat-grid">
@@ -100,7 +109,7 @@
                   <img src="src/images/png/meat-sandwiches/meat-1.png" alt="">
                   <h1 id="price-m1">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-meat1" onclick="BuyMeat1()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="meat-2" class="boxMeat">
@@ -108,7 +117,7 @@
                   <img src="src/images/png/meat-sandwiches/meat-2.png" alt="">
                   <h1 id="price-m2">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-meat2" onclick="BuyMeat2()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="meat-3" class="boxMeat">
@@ -116,7 +125,7 @@
                   <img src="src/images/png/meat-sandwiches/meat-3.png" alt="">
                   <h1 id="price-m3">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-meat3" onclick="BuyMeat3()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="meat-4" class="boxMeat">
@@ -124,11 +133,12 @@
                   <img src="src/images/png/meat-sandwiches/meat-4.png" alt="">
                   <h1 id="price-m4">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-meat4" onclick="BuyMeat4()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
             </div>
          </div>
+
          <div id="special-burg">
             <h1 id="title-special">Special Sandwiches</h1>
             <div class="special-grid">
@@ -137,7 +147,7 @@
                   <img src="src/images/png/special-sandwiches/special-1.png" alt="">
                   <h1 id="price-s1">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-special1" onclick="BuySpecial1()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="special-2" class="boxSpecial">
@@ -145,7 +155,7 @@
                   <img src="src/images/png/special-sandwiches/special-2.png" alt="">
                   <h1 id="price-s2">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-special2" onclick="BuySpecial2()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="special-3" class="boxSpecial">
@@ -153,7 +163,7 @@
                   <img src="src/images/png/special-sandwiches/special-3.png" alt="">
                   <h1 id="price-s3">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-special3" onclick="BuySpecial3()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="special-4" class="boxSpecial">
@@ -161,11 +171,12 @@
                   <img src="src/images/png/special-sandwiches/special-4.png" alt="">
                   <h1 id="price-s4">
                     $15.00
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-special4" onclick="BuySpecial4()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
             </div>
          </div>
+
          <div id="vegetarian-burg">
             <h1 id="title-vegetarian">Vegetarian Sandwiches</h1>
             <div class="vegetarian-grid">
@@ -174,7 +185,7 @@
                   <img src="src/images/png/vegetarian-sandwiches/vegetarian-1.png" alt="">
                   <h1 id="price-v1">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-vegetarian1" onclick="BuyVegetarian1()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="vegetarian-2" class="boxVegetarian">
@@ -182,7 +193,7 @@
                   <img src="src/images/png/vegetarian-sandwiches/vegetarian-2.png" alt="">
                   <h1 id="price-v2">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-vegetarian2" onclick="BuyVegetarian2()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="vegetarian-3" class="boxVegetarian">
@@ -190,7 +201,7 @@
                   <img src="src/images/png/vegetarian-sandwiches/vegetarian-3.png" alt="">
                   <h1 id="price-v3">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-vegetarian3" onclick="BuyVegetarian3()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="vegetarian-4" class="boxVegetarian">
@@ -198,11 +209,12 @@
                   <img src="src/images/png/vegetarian-sandwiches/vegetarian-4.png" alt="">
                   <h1 id="price-v4">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-vegetarian4" onclick="BuyVegetarian4()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
             </div>
          </div>
+
          <div id="dessert">
             <h1 id="title-dessert">Dessert</h1>
             <div class="dessert-grid">
@@ -211,7 +223,7 @@
                   <img src="src/images/png/dessert/dessert-1.png" alt="">
                   <h1 id="price-d1">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-dessert1" onclick="BuyDessert1()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="dessert-2" class="boxDessert">
@@ -219,7 +231,7 @@
                   <img src="src/images/png/dessert/dessert-2.png" alt="">
                   <h1 id="price-d2">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-dessert2" onclick="BuyDessert2()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="dessert-3" class="boxDessert">
@@ -227,7 +239,7 @@
                   <img src="src/images/png/dessert/dessert-3.png" alt="">
                   <h1 id="price-d3">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-dessert3" onclick="BuyDessert3()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
                <div id="dessert-4" class="boxDessert">
@@ -235,7 +247,7 @@
                   <img src="src/images/png/dessert/dessert-4.png" alt="">
                   <h1 id="price-d4">
                     $15.00 
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i id="buy-dessert4" onclick="BuyDessert4()" class="fa-solid fa-cart-shopping"></i>
                   </h1>
                </div>
             </div>
