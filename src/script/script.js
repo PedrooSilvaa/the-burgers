@@ -581,3 +581,7 @@ function OpenCart(){
 function CloseCart(){
     document.getElementById("local-buy").style.display = "none"
 }
+
+function Edit(){
+    console.log("em teste");
+}

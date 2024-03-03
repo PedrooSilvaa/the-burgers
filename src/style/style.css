@@ -376,3 +376,25 @@ main{
     color: blue;
     box-shadow: 2px 2px 2px black;
 }
+
+#edit {
+    position: absolute;
+    top: 73%;
+    right: 2%;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: fixed;
+    filter: drop-shadow(2px 2px 2px black);
+    cursor: pointer;
+}
+
+#edit i {
+    cursor: pointer;
+    color: white;
+}
