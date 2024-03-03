@@ -90,7 +90,7 @@ main{
     place-items: center;
     width: 300px;
     height: 300px;
-    filter: drop-shadow(20px 20px 20px black);
+    box-shadow: 10px 5px 5px black;
     background-color: rgb(245, 235, 220);
     text-align: center;
 }
@@ -119,7 +119,7 @@ main{
     place-items: center;
     width: 300px;
     height: 300px;
-    filter: drop-shadow(20px 20px 20px black);
+    box-shadow: 10px 5px 5px black;
     background-color: rgb(245, 235, 220);
     text-align: center;
 }
@@ -147,7 +147,7 @@ main{
     place-items: center;
     width: 300px;
     height: 300px;
-    filter: drop-shadow(20px 20px 20px black);
+    box-shadow: 10px 5px 5px black;
     background-color: rgb(245, 235, 220);
     text-align: center;
 }
@@ -176,7 +176,7 @@ main{
     place-items: center;
     width: 300px;
     height: 300px;
-    filter: drop-shadow(20px 20px 20px black);
+    box-shadow: 10px 5px 5px black;
     background-color: rgb(245, 235, 220);
     text-align: center;
 
@@ -234,29 +234,53 @@ main{
 }
 
 #price-m1, #price-m2, #price-m3, #price-m4 {
-    position: absolute;
+    position: relative;
     top: 102%;
     width: 300px;
     background-color: rgb(245, 235, 220);
+    box-shadow: 10px 5px 5px black;
 }
 
 #price-s1, #price-s2, #price-s3, #price-s4 {
-    position: absolute;
+    position: relative;
     top: 102%;
     width: 300px;
     background-color: rgb(245, 235, 220);
+    box-shadow: 10px 5px 5px black;
 }
 
 #price-v1, #price-v2, #price-v3, #price-v4 {
-    position: absolute;
-    top: 102%;
+    position: relative;
+    top: 20%;
     width: 300px;
     background-color: rgb(245, 235, 220);
+    box-shadow: 10px 5px 5px black;
 }
 
 #price-d1, #price-d2, #price-d3, #price-d4 {
-    position: absolute;
-    top: 102%;
+    position: relative;
+    top: 100%;
     width: 300px;
     background-color: rgb(245, 235, 220);
+    box-shadow: 10px 5px 5px black;
+}
+
+#icon-buy {
+    position: absolute;
+    top: 85%;
+    right: 2%;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: fixed;
+}
+
+#icon-buy i {
+    cursor: pointer;
+    color: white;
 }
