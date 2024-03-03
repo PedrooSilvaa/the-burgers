@@ -1,4 +1,4 @@
-var qtd = 1;
+var qtd = 0;
 var total = 0.0;
 
 
