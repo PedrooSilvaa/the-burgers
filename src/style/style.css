@@ -62,10 +62,10 @@ main{
 
 #filter-button {
     height: 50px;
-    width: 250px;
+    width: 300px;
+    background-color: rgb(245, 235, 220);
+
 }
-
-
 .meat-burg{
     border-bottom: 1px solid black;
     padding: 50px 0;
@@ -189,6 +189,38 @@ main{
 
 #list-filter {
     position: absolute;
-    width: 250px;
+    width: 300px;
     background-color: aqua;
+    padding: 10px 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    color: black;
+    background-color: black;
+}
+
+#apply {
+    font-size: 15px;
+    width: 100px;
+    position: absolute;
+    top: 90%;
+    border-radius: 15px;
+    background-color: rgb(245, 235, 220);
+}
+
+#viewMeat{
+    display: none;
+}
+#viewSpecial{
+    display: none;
+}
+#viewVegetarian{
+    display: none;
+}
+#viewDessert{
+    display: none;
 }
