@@ -232,3 +232,31 @@ main{
 #viewDessert{
     display: none;
 }
+
+#price-m1, #price-m2, #price-m3, #price-m4 {
+    position: absolute;
+    top: 102%;
+    width: 300px;
+    background-color: rgb(245, 235, 220);
+}
+
+#price-s1, #price-s2, #price-s3, #price-s4 {
+    position: absolute;
+    top: 102%;
+    width: 300px;
+    background-color: rgb(245, 235, 220);
+}
+
+#price-v1, #price-v2, #price-v3, #price-v4 {
+    position: absolute;
+    top: 102%;
+    width: 300px;
+    background-color: rgb(245, 235, 220);
+}
+
+#price-d1, #price-d2, #price-d3, #price-d4 {
+    position: absolute;
+    top: 102%;
+    width: 300px;
+    background-color: rgb(245, 235, 220);
+}

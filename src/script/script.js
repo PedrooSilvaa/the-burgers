@@ -49,7 +49,8 @@ function ViewVegetarian(){
 }
 
 function ViewDessert(){
-    document.getElementById("viewDessert").style.display = "flex";
+    document.getElementById("dessert").style.display = "flex";
     document.getElementById("closeDessert").style.display = "inline";
-    document.getElementById("dessert").style.display = "none";
+    document.getElementById("viewDessert").style.display = "none";
 }
+
