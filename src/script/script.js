@@ -4,11 +4,11 @@ var valor = 0;
 var posicao = 0;
 
 function Filter(){
-    document.getElementById("list-filter").style.display = "flex";
+    document.getElementById("local-filter").style.display = "flex";
 }
 
 function Apply(){
-    document.getElementById("list-filter").style.display = "none";
+    document.getElementById("local-filter").style.display = "none";
 }
 
 function CloseMeat(){

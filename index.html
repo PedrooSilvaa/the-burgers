@@ -10,6 +10,33 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    </head>
    <body>
+      <div id="local-filter">
+      <div id="list-filter">
+               <ul>
+                  <li>
+                     <i id="viewMeat" onclick="ViewMeat()" class="fa-solid fa-eye"></i> 
+                     <i id="closeMeat" onclick="CloseMeat()" class="fa-solid fa-xmark"></i> 
+                     Meat Sandwiches
+                 </li>
+                  <li>
+                     <i id="closeSpecial" onclick="CloseSpecial()" class="fa-solid fa-xmark"></i> 
+                     <i id="viewSpecial" onclick="ViewSpecial()" class="fa-solid fa-eye"></i> 
+                     Special Sandwiches
+                 </li>
+                  <li>
+                     <i id="closeVegetarian" onclick="CloseVegetarian()" class="fa-solid fa-xmark"></i> 
+                     <i id="viewVegetarian" onclick="ViewVegetarian()"class="fa-solid fa-eye"></i> 
+                     Vegetarian Sandwiches
+                 </li>
+                  <li>
+                     <i id="closeDessert" onclick="CloseDessert()" class="fa-solid fa-xmark"></i> 
+                     <i id="viewDessert" onclick="ViewDessert()" class="fa-solid fa-eye"></i>
+                     Dessert
+                 </li>
+               </ul>
+               <button id="apply" onclick="Apply()">Apply</button>
+         </div>
+      </div>
       <div id="edit" onclick="Edit()" >
          <i  onclick="Edit()" class="fa-solid fa-pen"></i>
       </div>
