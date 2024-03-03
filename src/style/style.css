@@ -486,7 +486,6 @@ main{
     }
 
     .menu{
-       position: fixed;
        width: 100%;
     }
 
@@ -511,5 +510,22 @@ main{
     flex-direction: column;
    }
 
+   #local-buy {
+    width: 70%;
+    position: absolute;
+    position: fixed;
+   }
 
+   .title-buy h1 {
+    font-size: 25px;
+   }
+   #title-page{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   #filter-button{
+    width: 100px;
+   }
 }
