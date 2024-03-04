@@ -2,6 +2,7 @@ var qtd = 1;
 var total = 0.0;
 var valor = 0;
 var posicao = 0;
+var qtdMeat = 4;
 
 function Filter(){
     document.getElementById("local-filter").style.display = "flex";
@@ -259,4 +260,207 @@ function RemoveList(itemId) {
     if (nameElement) nameElement.remove();
     if (priceElement) priceElement.remove();
     if (removedElement) removedElement.remove();
+}
+
+function AddMeat(){  
+    qtdMeat++;
+
+    var pai = document.getElementsByClassName("meat-grid");
+    var divPrincipal = document.createElement('div')
+
+    divPrincipal.setAttribute('class', 'boxMeat');
+    divPrincipal.setAttribute('id', `meat-${qtdMeat}`)
+
+    
+    var tituloLanche = document.createElement('h1');
+    
+    tituloLanche.setAttribute('id', `ttl-m${qtdMeat}`);
+    
+    
+    var imagem = document.createElement('img');
+    
+    imagem.setAttribute('src', `src/images/png/meat-sandwiches/meat-${qtdMeat}.png`)
+    
+    
+    var preco = document.createElement('h1');
+    
+    preco.setAttribute('id', `price-m${qtdMeat}`);
+    preco.setAttribute('class', `price-meat`);
+    
+    
+    var txtPrice = document.createElement('span');
+    
+    txtPrice.setAttribute('id', `valor-m${qtdMeat}`);
+    
+    
+    var icone = document.createElement('i');
+    
+    icone.setAttribute('id', `buy-meat${qtdMeat}`);
+    icone.setAttribute('onclick', `BuyMeat(${qtdMeat})`);
+    icone.setAttribute('class', 'fa-solid fa-cart-shopping')
+    
+    
+    tituloLanche.innerHTML = "Chedar melt"
+    preco.innerText = "$";
+    txtPrice.innerHTML = "10.00"
+
+    pai[0].appendChild(divPrincipal);
+    divPrincipal.appendChild(tituloLanche);
+    divPrincipal.appendChild(imagem);
+    divPrincipal.appendChild(preco);
+    preco.appendChild(txtPrice);
+    preco.appendChild(icone);
+}
+
+
+function AddSpecial(){  
+    qtdSpecial++;
+
+    var pai = document.getElementsByClassName("special-grid");
+    var divPrincipal = document.createElement('div')
+
+    divPrincipal.setAttribute('class', 'boxSpecial');
+    divPrincipal.setAttribute('id', `special-${qtdSpecial}`)
+
+    
+    var tituloLanche = document.createElement('h1');
+    
+    tituloLanche.setAttribute('id', `ttl-s${qtdSpecial}`);
+    
+    
+    var imagem = document.createElement('img');
+    
+    imagem.setAttribute('src', `src/images/png/special-sandwiches/special-${qtdSpecial}.png`)
+    
+    
+    var preco = document.createElement('h1');
+    
+    preco.setAttribute('id', `price-s${qtdSpecial}`);
+    preco.setAttribute('class', `price-special`);
+    
+    
+    var txtPrice = document.createElement('span');
+    
+    txtPrice.setAttribute('id', `valor-s${qtdSpecial}`);
+    
+    
+    var icone = document.createElement('i');
+    
+    icone.setAttribute('id', `buy-special${qtdSpecial}`);
+    icone.setAttribute('onclick', `BuySpecial(${qtdSpecial})`);
+    icone.setAttribute('class', 'fa-solid fa-cart-shopping')
+    
+    
+    tituloLanche.innerHTML = "Chedar melt"
+    preco.innerText = "$";
+    txtPrice.innerHTML = "10.00"
+
+    pai[0].appendChild(divPrincipal);
+    divPrincipal.appendChild(tituloLanche);
+    divPrincipal.appendChild(imagem);
+    divPrincipal.appendChild(preco);
+    preco.appendChild(txtPrice);
+    preco.appendChild(icone);
+}
+
+
+function AddVegetarian(){  
+    qtdVegetarian++;
+
+    var pai = document.getElementsByClassName("vegetarian-grid");
+    var divPrincipal = document.createElement('div')
+
+    divPrincipal.setAttribute('class', 'boxVegetarian');
+    divPrincipal.setAttribute('id', `vegetarian-${qtdVegetarian}`)
+
+    
+    var tituloLanche = document.createElement('h1');
+    
+    tituloLanche.setAttribute('id', `ttl-v${qtdVegetarian}`);
+    
+    
+    var imagem = document.createElement('img');
+    
+    imagem.setAttribute('src', `src/images/png/vegetarian-sandwiches/vegetarian-${qtdVegetarian}.png`)
+    
+    
+    var preco = document.createElement('h1');
+    
+    preco.setAttribute('id', `price-vegetarian-v${qtdVegetarian}`);
+    preco.setAttribute('class', `price-vegetarian`);
+    
+    
+    var txtPrice = document.createElement('span');
+    
+    txtPrice.setAttribute('id', `valor-v${qtdVegetarian}`);
+    
+    
+    var icone = document.createElement('i');
+    
+    icone.setAttribute('id', `buy-vegetarian${qtdVegetarian}`);
+    icone.setAttribute('onclick', `BuyVegetarian(${qtdVegetarian})`);
+    icone.setAttribute('class', 'fa-solid fa-cart-shopping')
+    
+    
+    tituloLanche.innerHTML = "Chedar melt"
+    preco.innerText = "$";
+    txtPrice.innerHTML = "10.00"
+
+    pai[0].appendChild(divPrincipal);
+    divPrincipal.appendChild(tituloLanche);
+    divPrincipal.appendChild(imagem);
+    divPrincipal.appendChild(preco);
+    preco.appendChild(txtPrice);
+    preco.appendChild(icone);
+}
+
+
+function AddDessert(){  
+    qtdDessert++;
+
+    var pai = document.getElementsByClassName("dessert-grid");
+    var divPrincipal = document.createElement('div')
+
+    divPrincipal.setAttribute('class', 'boxDessert');
+    divPrincipal.setAttribute('id', `dessert-${qtdDessert}`)
+
+    
+    var tituloLanche = document.createElement('h1');
+    
+    tituloLanche.setAttribute('id', `ttl-d${qtdDessert}`);
+    
+    
+    var imagem = document.createElement('img');
+    
+    imagem.setAttribute('src', `src/images/png/dessert/dessert-${qtdDessert}.png`)
+    
+    
+    var preco = document.createElement('h1');
+    
+    preco.setAttribute('id', `price-dessert-d${qtdDessert}`);
+    preco.setAttribute('class', `price-dessert`);
+    
+    
+    var txtPrice = document.createElement('span');
+    
+    txtPrice.setAttribute('id', `valor-d${qtdDessert}`);
+    
+    
+    var icone = document.createElement('i');
+    
+    icone.setAttribute('id', `buy-dessert${qtdDessert}`);
+    icone.setAttribute('onclick', `BuyDessert(${qtdDessert})`);
+    icone.setAttribute('class', 'fa-solid fa-cart-shopping')
+    
+    
+    tituloLanche.innerHTML = "Chedar melt"
+    preco.innerText = "$";
+    txtPrice.innerHTML = "10.00"
+
+    pai[0].appendChild(divPrincipal);
+    divPrincipal.appendChild(tituloLanche);
+    divPrincipal.appendChild(imagem);
+    divPrincipal.appendChild(preco);
+    preco.appendChild(txtPrice);
+    preco.appendChild(icone);
 }

@@ -125,6 +125,7 @@ main{
     color: yellow;
     font-size: 30px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .boxMeat img {
@@ -301,7 +302,7 @@ main{
     display: none;
 }
 
-#price-m1, #price-m2, #price-m3, #price-m4 {
+.price-meat{
     position: static;
     border-top: 1px black solid;
     width: 300px;
@@ -441,13 +442,13 @@ main{
     max-width: 100%;
 }   
 
-#price-m1 i, #price-m2 i, #price-m3 i, #price-m4 i,#price-s1 i, #price-s2 i, #price-s3 i, #price-s4 i,
-#price-v1 i, #price-v2 i, #price-v3 i, #price-v4 i,#price-d1 i, #price-d2 i, #price-d3 i, #price-d4 i{
+.price-meat i,#price-s1 i, .price-special i,
+.price-vegetarian i, .price-dessert i{
     color: #5e210c;
     padding: 0;
 }
-#price-m1 i:hover, #price-m2 i:hover, #price-m3 i:hover, #price-m4 i:hover,#price-s1 i:hover, #price-s2 i:hover, #price-s3 i:hover, #price-s4 i:hover,
-#price-v1 i:hover, #price-v2 i:hover, #price-v3 i:hover, #price-v4 i:hover,#price-d1 i:hover, #price-d2 i:hover, #price-d3 i:hover, #price-d4 i:hover{
+.price-meat i:hover,#price-s1 i:hover, .price-special i:hover,
+.price-vegetarian i:hover, .price-dessert i:hover{
     color: black;
     box-shadow: 2px 2px 2px black;
 }
@@ -529,3 +530,30 @@ main{
     font-size: 16px;
    }
 }
+
+#box-removed1 i {
+    font-size: 20px;
+}
+
+/* <div id="meat-1" class="boxMeat">
+    <h1 id="ttl-m1">Cheddar Duplo</h1>
+        <img src="src/images/png/meat-sandwiches/meat-1.png" alt="">
+        <h1 id="price-m1">
+            $ <span id="valor-m1">15.00</span>
+            <i id="buy-meat1" onclick="BuyMeat(1)" class="fa-solid fa-cart-shopping"></i>
+        </h1>
+</div> */
+
+/* 
+pai -> #meat-burg
+criar
+
+div#meat-Qtd | .boxMeat
+
+h1#ttl-mQtd -> nome do lanche
+
+img
+h1#price-mQtd -> span#valor-mQtd
+i#buy-meatQtd onclick BuyMeat(1) -> class="fa-solid fa-cart-shopping"
+
+*/
