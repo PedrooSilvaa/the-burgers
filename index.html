@@ -10,6 +10,47 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    </head>
    <body>
+
+      <div id="local-escolha-meat">
+         <div id="escolha-meat">
+            <label for="nameTxt">Name</label>
+            <input type="text" id="nameTxtMeat">
+            <label for="priceMeat">Price</label>
+            <input type="number" id="priceMeat">
+            <button onclick="AddMeat()">Adicionar</button>
+         </div>
+      </div>
+
+      <div id="local-escolha-special">
+         <div id="escolha-special">
+            <label for="nameTxt">Name</label>
+            <input type="text" id="nameTxtSpecial">
+            <label for="priceSpecial">Price</label>
+            <input type="number" id="priceSpecial">
+            <button onclick="AddSpecial()">Adicionar</button>
+         </div>
+      </div>
+
+      <div id="local-escolha-vegetarian">
+         <div id="escolha-vegetarian">
+            <label for="nameTxt">Name</label>
+            <input type="text" id="nameTxtVegetarian">
+            <label for="priceVegetarian">Price</label>
+            <input type="number" id="priceVegetarian">
+            <button onclick="AddVegetarian()">Adicionar</button>
+         </div>
+      </div>
+
+      <div id="local-escolha-dessert">
+         <div id="escolha-dessert">
+            <label for="nameTxt">Name</label>
+            <input type="text" id="nameTxtDessert">
+            <label for="priceDessert">Price</label>
+            <input type="number" id="priceDessert">
+            <button onclick="AddDessert()">Adicionar</button>
+         </div>
+      </div>
+
       <div id="local-filter">
       <div id="list-filter">
                <ul>
@@ -37,8 +78,8 @@
                <button id="apply" onclick="Apply()">Apply</button>
          </div>
       </div>
-      <div id="edit" onclick="AddMeat()" >
-         <i  onclick="AddMeat()" class="fa-solid fa-pen"></i>
+      <div id="edit" onclick="Edit()" >
+         <i  onclick="Edit()" class="fa-solid fa-pen"></i>
       </div>
     <div id="icon-buy" onclick="OpenCart()">
         <i onclick="OpenCart()" class="fa-solid fa-cart-shopping"></i>
@@ -92,7 +133,7 @@
          </div>
 
          <div id="meat-burg">
-            <h1 id="title-meat">Meat Sandwiches <button id="addMeat" onclick="AddMeat()"><i class="fa-solid fa-plus"></i></button></h1>
+            <h1 id="title-meat">Meat Sandwiches <button id="addMeat" onclick="EscolhaMeat()"><i class="fa-solid fa-plus"></i></button></h1>
             <div class="meat-grid">
                <div id="meat-1" class="boxMeat">
                   <h1 id="ttl-m1">Cheddar Duplo</h1>
@@ -130,7 +171,7 @@
          </div>
 
          <div id="special-burg">
-            <h1 id="title-special">Special Sandwiches <button id="addSpecial" onclick="AddSpecial()"><i class="fa-solid fa-plus"></i></button></h1>
+            <h1 id="title-special">Special Sandwiches <button id="addSpecial" onclick="EscolhaSpecial()"><i class="fa-solid fa-plus"></i></button></h1>
             <div class="special-grid">
                <div id="special-1" class="boxSpecial">
                   <h1 id="ttl-s1">Whopper Royal</h1>
@@ -168,7 +209,7 @@
          </div>
 
          <div id="vegetarian-burg">
-            <h1 id="title-vegetarian">Vegetarian Sandwiches <button id="addVegetarian" onclick="AddVegetarian()"><i class="fa-solid fa-plus"></i></button></h1>
+            <h1 id="title-vegetarian">Vegetarian Sandwiches <button id="addVegetarian" onclick="EscolhaVegetarian()"><i class="fa-solid fa-plus"></i></button></h1>
             <div class="vegetarian-grid">
                <div id="vegetarian-1" class="boxVegetarian">
                   <h1 id="ttl-v1">Chicken Crispy</h1>
@@ -206,7 +247,7 @@
          </div>
 
          <div id="dessert">
-            <h1 id="title-dessert">Dessert <button id="addDessert" onclick="AddDessert()"><i class="fa-solid fa-plus"></i></button></h1>
+            <h1 id="title-dessert">Dessert <button id="addDessert" onclick="EscolhaDessert()"><i class="fa-solid fa-plus"></i></button></h1>
             <div class="dessert-grid">
                <div id="dessert-1" class="boxDessert">
                   <h1 id="ttl-d1">Sundae</h1>

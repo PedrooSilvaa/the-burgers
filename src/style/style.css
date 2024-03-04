@@ -483,6 +483,7 @@ main{
 }
 
 #addMeat {
+    display: none;
     width: 100px;
     background-color: #5e210c;
 }
@@ -491,6 +492,7 @@ main{
     font-size: 40px;
 }
 #addSpecial {
+    display: none;
     width: 100px;
     background-color: #5e210c;
 }
@@ -499,6 +501,7 @@ main{
     font-size: 40px;
 }
 #addVegetarian {
+    display: none;
     width: 100px;
     background-color: #5e210c;
 }
@@ -507,12 +510,177 @@ main{
     font-size: 40px;
 }
 #addDessert {
+    display: none;
     width: 100px;
     background-color: #5e210c;
 }
 #addDessert i {
     color: yellow;
     font-size: 40px;
+}
+
+#local-escolha-meat {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(94, 33, 12, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#escolha-meat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: #5e210c;
+    width: 500px;
+    height: 300px;
+    border: solid #5e210c 20px;
+}
+
+#escolha-meat label {
+    font-size: 30px;
+    font-weight: 900;
+    color: #5e210c;
+}
+
+#escolha-meat button {
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: #5e210c;
+    color: yellow;
+}
+
+#local-escolha-special {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(94, 33, 12, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#escolha-special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: #5e210c;
+    width: 500px;
+    height: 300px;
+    border: solid #5e210c 20px;
+}
+
+#escolha-special label {
+    font-size: 30px;
+    font-weight: 900;
+    color: #5e210c;
+}
+
+#escolha-special button {
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: #5e210c;
+    color: yellow;
+}
+
+#local-escolha-vegetarian {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(94, 33, 12, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#escolha-vegetarian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: #5e210c;
+    width: 500px;
+    height: 300px;
+    border: solid #5e210c 20px;
+}
+
+#escolha-vegetarian label {
+    font-size: 30px;
+    font-weight: 900;
+    color: #5e210c;
+}
+
+#escolha-vegetarian button {
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: #5e210c;
+    color: yellow;
+}
+
+#local-escolha-dessert {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(94, 33, 12, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#escolha-dessert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    color: #5e210c;
+    width: 500px;
+    height: 300px;
+    border: solid #5e210c 20px;
+}
+
+#escolha-dessert label {
+    font-size: 30px;
+    font-weight: 900;
+    color: #5e210c;
+}
+
+#escolha-dessert button {
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 5px;
+    background-color: #5e210c;
+    color: yellow;
 }
 
 @media(max-width: 800px){
@@ -569,26 +737,3 @@ main{
 #box-removed1 i {
     font-size: 20px;
 }
-
-/* <div id="meat-1" class="boxMeat">
-    <h1 id="ttl-m1">Cheddar Duplo</h1>
-        <img src="src/images/png/meat-sandwiches/meat-1.png" alt="">
-        <h1 id="price-m1">
-            $ <span id="valor-m1">15.00</span>
-            <i id="buy-meat1" onclick="BuyMeat(1)" class="fa-solid fa-cart-shopping"></i>
-        </h1>
-</div> */
-
-/* 
-pai -> #meat-burg
-criar
-
-div#meat-Qtd | .boxMeat
-
-h1#ttl-mQtd -> nome do lanche
-
-img
-h1#price-mQtd -> span#valor-mQtd
-i#buy-meatQtd onclick BuyMeat(1) -> class="fa-solid fa-cart-shopping"
-
-*/

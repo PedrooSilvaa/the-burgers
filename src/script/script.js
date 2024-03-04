@@ -6,6 +6,10 @@ var qtdMeat = 4;
 var qtdSpecial = 4;
 var qtdVegetarian = 4;
 var qtdDessert = 4;
+var nome = "";
+var precoDoProduto = 0;
+var qtdImagem = 4;
+
 
 function Filter(){
     document.getElementById("local-filter").style.display = "flex";
@@ -244,7 +248,10 @@ function CloseCart(){
 }
 
 function Edit(){
-    console.log("em teste");
+    document.getElementById("addMeat").style.display = "inline";
+    document.getElementById("addSpecial").style.display = "inline";
+    document.getElementById("addVegetarian").style.display = "inline";
+    document.getElementById("addDessert").style.display = "inline";
 }
 
 function RemoveList(itemId) {
@@ -266,6 +273,7 @@ function RemoveList(itemId) {
 }
 
 function AddMeat(){  
+    qtdImagem++;
     qtdMeat++;
 
     var pai = document.getElementsByClassName("meat-grid");
@@ -302,10 +310,12 @@ function AddMeat(){
     icone.setAttribute('onclick', `BuyMeat(${qtdMeat})`);
     icone.setAttribute('class', 'fa-solid fa-cart-shopping')
     
+    nome = document.getElementById("nameTxtMeat").value;
+    precoDoProduto = document.getElementById("priceMeat").value;
     
-    tituloLanche.innerHTML = "Chedar melt"
+    tituloLanche.innerHTML = nome;
     preco.innerText = "$";
-    txtPrice.innerHTML = "10.00"
+    txtPrice.innerText = precoDoProduto + ".00";
 
     pai[0].appendChild(divPrincipal);
     divPrincipal.appendChild(tituloLanche);
@@ -313,10 +323,13 @@ function AddMeat(){
     divPrincipal.appendChild(preco);
     preco.appendChild(txtPrice);
     preco.appendChild(icone);
+
+    document.getElementById('local-escolha-meat').style.display = "none";
 }
 
 
 function AddSpecial(){  
+    qtdImagem++;
     qtdSpecial++;
 
     var pai = document.getElementsByClassName("special-grid");
@@ -354,9 +367,12 @@ function AddSpecial(){
     icone.setAttribute('class', 'fa-solid fa-cart-shopping')
     
     
-    tituloLanche.innerHTML = "Chedar melt"
+    nome = document.getElementById("nameTxtMeat").value;
+    precoDoProduto = document.getElementById("priceMeat").value;
+    
+    tituloLanche.innerHTML = nome;
     preco.innerText = "$";
-    txtPrice.innerHTML = "10.00"
+    txtPrice.innerText = precoDoProduto + ".00";
 
     pai[0].appendChild(divPrincipal);
     divPrincipal.appendChild(tituloLanche);
@@ -364,10 +380,13 @@ function AddSpecial(){
     divPrincipal.appendChild(preco);
     preco.appendChild(txtPrice);
     preco.appendChild(icone);
+
+    document.getElementById('local-escolha-special').style.display = "none";
 }
 
 
 function AddVegetarian(){  
+    qtdImagem++;
     qtdVegetarian++;
 
     var pai = document.getElementsByClassName("vegetarian-grid");
@@ -405,9 +424,12 @@ function AddVegetarian(){
     icone.setAttribute('class', 'fa-solid fa-cart-shopping')
     
     
-    tituloLanche.innerHTML = "Chedar melt"
+    nome = document.getElementById("nameTxtMeat").value;
+    precoDoProduto = document.getElementById("priceMeat").value;
+    
+    tituloLanche.innerHTML = nome;
     preco.innerText = "$";
-    txtPrice.innerHTML = "10.00"
+    txtPrice.innerText = precoDoProduto + ".00";
 
     pai[0].appendChild(divPrincipal);
     divPrincipal.appendChild(tituloLanche);
@@ -415,10 +437,13 @@ function AddVegetarian(){
     divPrincipal.appendChild(preco);
     preco.appendChild(txtPrice);
     preco.appendChild(icone);
+
+    document.getElementById('local-escolha-vegetarian').style.display = "none";
 }
 
 
 function AddDessert(){  
+    qtdImagem++;
     qtdDessert++;
 
     var pai = document.getElementsByClassName("dessert-grid");
@@ -456,9 +481,12 @@ function AddDessert(){
     icone.setAttribute('class', 'fa-solid fa-cart-shopping')
     
     
-    tituloLanche.innerHTML = "Chedar melt"
+    nome = document.getElementById("nameTxtMeat").value;
+    precoDoProduto = document.getElementById("priceMeat").value;
+    
+    tituloLanche.innerHTML = nome;
     preco.innerText = "$";
-    txtPrice.innerHTML = "10.00"
+    txtPrice.innerText = precoDoProduto + ".00";
 
     pai[0].appendChild(divPrincipal);
     divPrincipal.appendChild(tituloLanche);
@@ -466,4 +494,19 @@ function AddDessert(){
     divPrincipal.appendChild(preco);
     preco.appendChild(txtPrice);
     preco.appendChild(icone);
+
+    document.getElementById('local-escolha-dessert').style.display = "none";
+}
+
+function EscolhaMeat() {
+    document.getElementById('local-escolha-meat').style.display = "flex";
+}
+function EscolhaSpecial() {
+    document.getElementById('local-escolha-special').style.display = "flex";
+}
+function EscolhaVegetarian() {
+    document.getElementById('local-escolha-vegetarian').style.display = "flex";
+}
+function EscolhaDessert() {
+    document.getElementById('local-escolha-dessert').style.display = "flex";
 }
