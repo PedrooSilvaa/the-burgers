@@ -684,6 +684,10 @@ main{
 }
 
 @media(max-width: 800px){
+    #initial-page {
+        background-repeat: repeat;
+        background-size: 110%;
+    }
     .meat-grid, .vegetarian-grid, .special-grid, .dessert-grid {
         grid-template-columns: 1fr;
     }
