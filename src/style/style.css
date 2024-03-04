@@ -685,6 +685,27 @@ main{
     color: yellow;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/png/meat-sandwiches/meat-1.png);
+    background-size: 10%;
+}
+
+footer h1 {
+    color: yellow;
+    font-weight: 900;
+}
+
+#local-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(94, 33, 12, 0.5);
+
+}
 @media(max-width: 800px){
     #initial-page {
         background-repeat: repeat;
