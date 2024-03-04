@@ -3,6 +3,9 @@ var total = 0.0;
 var valor = 0;
 var posicao = 0;
 var qtdMeat = 4;
+var qtdSpecial = 4;
+var qtdVegetarian = 4;
+var qtdDessert = 4;
 
 function Filter(){
     document.getElementById("local-filter").style.display = "flex";
